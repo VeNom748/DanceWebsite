@@ -2,6 +2,7 @@ const express= require("express");
 const fs=require("fs");
 const path= require("path");
 const nodemailer = require("nodemailer");
+const port = process.env.PORT || 8000;
 
 
 const app = express()
@@ -67,8 +68,8 @@ app.post("/contact",(req,res)=>{
 
 });
 
-app.listen(80,()=>{
-    console.log(`app is running on http://localhost`);
+app.listen(port,()=>{
+    console.log(`app is running on http://localhost:${port}`);
     
 })
 
