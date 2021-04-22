@@ -1,0 +1,37 @@
+extends base.pug
+block style
+    style 
+        include ../static/style.css
+
+block content
+    section.second-section
+        div.s-section-heading
+            h1 Our Services
+        div.s-section-content
+            div.s-card
+                h4 Folk Dance 
+                div.card-box
+                    img(src="../static/1.png", alt="img")
+                    p Folk and tribal dances are performed for every possible occasion
+            div.s-card
+                h4 Aerobic Dance
+                div.card-box
+                    img(src="../static/2.png", alt="img")
+                    p Aerobics is a fast pace dancing style. It can make you feel tired in a short time
+            div.s-card
+                h4 Hip Hop Dance Training
+                div.card-box
+                    img(src="../static/3.png", alt="img")
+                    p Hip-hop dance refers to street dance styles primarily performed to hip-hop music.
+
+    section.third-section#sponcer-section
+        div.s-section-heading
+            h1 Our Sponcers
+            div.splogo
+                img(src="../static/apple.png", alt="")
+                img(src="../static/microsoft.png", alt="")
+                img(src="../static/hp.png", alt="")
+                img(src="../static/dell.png", alt="")
+block script
+    script
+        include ../static/index.js

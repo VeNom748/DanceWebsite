@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=ZCOOL+QingKe+HuangYou&display=swap');
+:root{
+    --font1:'Roboto Mono', monospace;
+    --font2:'Changa', sans-serif;
+    --font3:'ZCOOL QingKe HuangYou', cursive;
+    --font4:'Dancing Script', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navigation Bar CSS */
+.navbar{
+    list-style: none;
+    padding: 10px 10px;
+    background-color: black;
+    font-family:var(--font1);
+    font-weight: bold;
+    display:flex;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+}
+.logo{
+    color: white;
+    margin-right: 50px;
+    font-family: var(--font4);
+    font-weight: bold;
+}
+.logo img{
+    height: 50px;
+    filter: invert(1);
+
+    
+}
+.nav-list li a{
+    text-decoration: none;
+    display: inline;
+    padding: 10px 10px;
+    margin: 0px 10px;
+    color: white;
+    transition: all 0.5s ease;
+    
+}
+.nav-list li a:hover{
+    color: red;
+    border-bottom: 2px solid red;
+
+}
+.nav-list ul{
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    display: flex;
+    align-items: center;
+}
+
+/* First Section CSS  */
+.first-section{
+    background: center/cover no-repeat url("../static/bg-image.jpg");   
+    height: 80vh;
+    background-color:red;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font3);
+    font-size: 2rem;
+    text-align: center;
+}
+.first-section h2{
+    font-family: var(--font4);
+    font-size: 2.5rem;
+
+    margin: 20px;
+}
+.first-section span{
+    font-size: 4rem;
+    color: red;
+    text-shadow: 0 0 24px black;
+}
+
+
+/* Seconnd section css */
+.second-section{
+    height: 80vh;
+    background:linear-gradient(to top ,red , black);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: var(--font1);
+}
+.s-section-heading{
+    margin: 50px;
+}
+.s-section-content{
+   display: flex;
+
+}
+.s-card{
+    height: 50vh;
+    width: 25vw;
+    border: 2px solid white;
+    margin: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.349);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 0 5px black, 0 0 15px black;
+    transition: all 0.5s ease;
+}
+.s-card h4{
+    color: red;
+    text-shadow:0 0 5px black, 0 0 20px black, 0 0 5px black;
+    
+}
+.s-card:hover{
+    transform: scale(1.03);
+}
+.card-box img{
+    height: 200px;
+
+}
+.card-box p{
+    font-size: 1rem;
+    padding: 0px 10px;
+}
+
+/* third section CSS  */
+.third-section{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--font1);
+}
+.splogo img{
+    height: 20vh;
+    margin: 50px 20px;
+    box-shadow:0 0 10px #00000061, 0 0 25px #00000059;
+    border-radius: 50%;    
+}
+
+
+/* footer section css  */
+.footer-section   {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-section h2{
+    color: white;
+    font-family: var(--font1);
+    font-size: 1rem;
+
+}

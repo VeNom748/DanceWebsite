@@ -1,0 +1,20 @@
+extends base.pug
+block style
+    style 
+        include ../static/style.css
+        include ../static/contact.css
+block content 
+    section.contact-form
+        h1 Fill This Contact From 
+        form(action="/contact", method="post" , class="myForm") 
+            input(type="text" name="name" class="myInput" placeholder="Enter your Full Name...")
+            input(type="text" name="age" class="myInput" placeholder="Enter your Age...")
+            select(name="gender" class="myInput inputWidth" )
+                option Male
+                option FeMale
+            textarea(name="address", cols="30", rows="10" class="myInput" placeholder="Enter your Address...")
+            textarea(name="more", cols="30", rows="10" class="myInput" placeholder="More about you...")
+            button.btn.myInput.inputWidth Submit
+block script
+    script
+        include ../static/index.js

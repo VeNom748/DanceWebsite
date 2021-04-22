@@ -1,0 +1,26 @@
+doctype html
+html
+    head    
+        title AK's Dance Academy
+        block style
+    body
+        nav.navbar 
+            div.nav-list
+                ul
+                    li.logo
+                        img(src="../static/logo.png", alt="logo")
+                        |AK's
+                    li #[a(href="/") Home] 
+                    li #[a(href="/") About]
+                    li #[a(href="/") Services]
+                    li #[a(href="/contact") Contact us]
+                    li #[a(href="/") Plan Info] 
+        section.first-section 
+            div.f-section-content  
+                h1 <span>W</span>elcome To <span>A</span>K's <span>D</span>ance <span>A</span>cademy
+                h2 Feel the beat...
+        block content
+
+        footer.footer-section   
+            h2 copyright &copy; 2027 www.AkDanceAcademy.com | All Rights Reserved | Privacy Policy 
+        block script
